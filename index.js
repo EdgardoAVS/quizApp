@@ -16,18 +16,30 @@ function random () {
   }
   return orden;
 }
+function randomAnswers () {
+  let orden = [];
+  while(orden.length < questions[0].answers.length) {
+    const num = Math.floor(Math.random() * questions[0].answers.length);
+    if(orden.indexOf(num) == -1) {
+      orden.push(num)
+    }
+  }
+  return orden;
+}
 
+const orden = random();
 let score = 0;
 let current = 0
-const orden = random();
 
 load();
 
 function load () {
+  const ordenAnswers = randomAnswers();
   const questionData = questions[orden[current]]
   questionTitle.innerText = questionData.question
+  
   answers.forEach((answer, index) => {
-    answer.innerText = questionData.answers[index]
+    answer.innerText = questionData.answers[ordenAnswers[index]];
   })
 }
 
@@ -52,7 +64,6 @@ function deselect () {
 submit.addEventListener("click", () => {
   const answer = getSelect();
   if(answer) {
-    console.log(answer);
     if(answer === questions[orden[current]].correctAnswer) {
       score++;
     }
@@ -61,8 +72,8 @@ submit.addEventListener("click", () => {
     if(current < questions.length) {
       load();
     } else {
-      document.getElementById("quiz").innerHTML = `<h1 class="results">Tu puntaje es: ${score} de ${questions.length}</h1>
-      <button class="button-reload" onclick="location.reload()">Volver a jugar</button>`;
+      document.getElementById("quiz").innerHTML = `<h1 class="results">Your score is ${score} of ${questions.length}</h1>
+      <button class="button-reload" onclick="location.reload()">Play again</button>`;
     }
   }
 }) 

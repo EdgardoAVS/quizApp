@@ -1,47 +1,42 @@
 export const questions = [
   {
-    question: "¿Cuál es mi color favorito?",
-    answers: ["Azul", "Verde", "Rojo", "Naranja"],
-    correctAnswer: "Azul"
+    question: "What does HTML means?",
+    answers: ["Hyper Text Management Language", "Hyper Text Markup Language", "How To Make Lasagna", "Hyper Things Managing Language"],
+    correctAnswer: "Hyper Text Markup Language"
   },
   {
-    question: "¿Cuál es mi película favorita?",
-    answers: ["Iron man", "Los vengadores", "Spider man", "Black Panther"],
-    correctAnswer: "Los vengadores"
+    question: "What does CSS means?",
+    answers: ["Carrot Sytem Style", "Canvas Styling System", "Cascading Style Sheets", "Correlated Styling System"],
+    correctAnswer: "Cascading Style Sheets"
   },
   {
-    question: "¿Cuál es el día de mi cumpleaños?",
-    answers: ["16 Mayo", "26 Mayo", "06 Mayo", "16 Junio"],
-    correctAnswer: "26 Mayo"
+    question: "Which HTML tag is used to embed the JavaScript code?",
+    answers: ["<script>", "<js>", "<javascript>", "<scripting>"],
+    correctAnswer: "<script>"
   },
   {
-    question: "¿Cuál es mi comida rápida favorita?",
-    answers: ["Pizza", "Hamburguesa", "Desgranado", "Salchipapa"],
-    correctAnswer: "Hamburguesa"
+    question: "Which company developed JavaScript?",
+    answers: ["Netscape", "Mozilla", "Google", "Microsoft"],
+    correctAnswer: "Netscape"
   },
   {
-    question: "¿A quién quiero más?",
-    answers: ["Aaron", "Max", "Aaron y Max", "A ti"],
-    correctAnswer: "A ti"
+    question: "What is pop() method in JavaScript?",
+    answers: ["It is used to remove the last element of an array", "It is used to remove the first element of an array", "It is a general Javascript method", "Does not exist in Javascript"],
+    correctAnswer: "It is used to remove the last element of an array"
   },
   {
-    question: "¿Fecha de nuestro aniversario?",
-    answers: ["15 Julio", "15 Junio", "15 Agosto", "15 Septiembre"],
-    correctAnswer: "15 Julio"
+    question: "How do you return the value of a function in JavaScript?",
+    answers: ["return", "returns", "returning", "returned"],
+    correctAnswer: "return"
   },
   {
-    question: "¿Sabes cuánto te quiero?",
-    answers: ["Mucho", "Poco", "Muchísimo", "Hasta el infinito"],
-    correctAnswer: "Hasta el infinito"
+    question: "What symbol is used to create a comment in JavaScript?",
+    answers: ["//", "*", "!", "?"],
+    correctAnswer: "//"
   },
   {
-    question: "¿Cuantos hijos tendremos?",
-    answers: ["1", "2", "5", "Ninguno"],
-    correctAnswer: "Ninguno"
-  },
-  {
-    question: "¿Cuando vamos a vivir juntos?",
-    answers: ["Nunca", "El próximo año", "Lo antes posible", "Dentro de 5 años"],
-    correctAnswer: "Lo antes posible"
+    question: "What is JavaScript?",
+    answers: ["A programming language", "A framework for building web applications", "A web framework", "A type of coffee"],
+    correctAnswer: "A programming language"
   },
 ]
