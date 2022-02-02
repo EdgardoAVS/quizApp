@@ -25,11 +25,6 @@ export const questions = [
     correctAnswer: "A ti"
   },
   {
-    question: "¿A quién quiero más?",
-    answers: ["Aaron", "Max", "Aaron y Max", "A ti"],
-    correctAnswer: "A ti"
-  },
-  {
     question: "¿Fecha de nuestro aniversario?",
     answers: ["15 Julio", "15 Junio", "15 Agosto", "15 Septiembre"],
     correctAnswer: "15 Julio"
@@ -40,8 +35,13 @@ export const questions = [
     correctAnswer: "Hasta el infinito"
   },
   {
-    question: "¿Sabes cuánto te quiero?",
-    answers: ["Mucho", "Poco", "Muchísimo", "Hasta el infinito"],
-    correctAnswer: "Hasta el infinito"
+    question: "¿Cuantos hijos tendremos?",
+    answers: ["1", "2", "5", "Ninguno"],
+    correctAnswer: "Ninguno"
+  },
+  {
+    question: "¿Cuando vamos a vivir juntos?",
+    answers: ["Nunca", "El próximo año", "Lo antes posible", "Dentro de 5 años"],
+    correctAnswer: "Lo antes posible"
   },
 ]
